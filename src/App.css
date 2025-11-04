@@ -268,3 +268,48 @@
     background: #40a9ff;
     border-color: #40a9ff;
   }
+
+.calculator-section {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 24px;
+  }
+  
+  .calculator-section .ant-card {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .calculator-section .ant-form-item-label > label {
+    font-weight: 500;
+    font-size: 14px;
+  }
+  
+  .calculator-section .ant-input,
+  .calculator-section .ant-select-selector {
+    border-radius: 6px;
+  }
+  
+  .calculator-section .ant-btn {
+    border-radius: 6px;
+    height: 40px;
+    font-weight: 500;
+  }
+  
+  .calculator-section .ant-alert {
+    border-radius: 6px;
+  }
+  
+  @media (max-width: 768px) {
+    .calculator-section {
+      padding: 16px;
+      margin: 16px;
+    }
+    
+    .calculator-section .ant-btn {
+      width: 100%;
+      margin-bottom: 8px;
+    }
+  }
