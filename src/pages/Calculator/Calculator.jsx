@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { Form, Input, Select, Button, Alert, Card, Space, Typography, Row, Col } from 'antd';
+import { Form, Input, Select, Button, Alert, Card, Space, Typography, Row, Col, Divider } from 'antd';
 import { useNavigate } from 'react-router-dom';
+import ServiceCalculator from './ServiceCalculator'; 
 
 const { Title, Text } = Typography;
 const { Option } = Select;
@@ -73,12 +74,11 @@ const Calculator = () => {
   };
 
   return (
-    <div style={{ padding: '24px', maxWidth: '600px', margin: '0 auto' }}>
-      <Card>
+    <div style={{ padding: '24px', maxWidth: '800px', margin: '0 auto' }}>
+      <Card style={{ marginBottom: 24 }}>
         <Space direction="vertical" size="large" style={{ width: '100%' }}>
           <div style={{ textAlign: 'center' }}>
             <Title level={2}>Калькулятор стоимости заказа</Title>
-            <Text type="secondary">Рассчитайте стоимость вашего заказа</Text>
           </div>
 
           <Form layout="vertical">
@@ -164,6 +164,10 @@ const Calculator = () => {
           )}
         </Space>
       </Card>
+
+      <Divider />
+
+      <ServiceCalculator />
     </div>
   );
 };

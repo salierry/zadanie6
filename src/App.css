@@ -313,3 +313,27 @@
       margin-bottom: 8px;
     }
   }
+
+  .calculator-section .ant-card {
+    margin-bottom: 16px;
+  }
+  
+  .calculator-section .ant-radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .calculator-section .ant-radio-wrapper {
+    margin-right: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .calculator-section .ant-radio-group {
+      gap: 12px;
+    }
+    
+    .calculator-section .ant-select {
+      width: 100% !important;
+    }
+  }

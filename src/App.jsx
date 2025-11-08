@@ -401,7 +401,7 @@ const App = () => {
         <div className="header-content">
           <div className="logo-title">
             <img src={kguLogo} alt="Логотип" className="logo" />
-            <h1 className="site-title">Задание 5</h1>
+            <h1 className="site-title">Задание 6</h1>
           </div>
           
           <Menu
